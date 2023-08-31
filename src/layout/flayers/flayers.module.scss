@@ -1,0 +1,11 @@
+@import '@/app/variables.scss';
+
+.flayers{
+    
+    @media only screen and (max-width: $bp-medium){
+        padding: 3rem;
+        grid-column: 1 / span 2;
+    }
+    width: 100%;
+    height: 20rem;
+}

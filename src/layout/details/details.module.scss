@@ -1,26 +1,31 @@
 @import '@/app/variables.scss';
 
-.detail{
-    display: flex;
+.details{
     padding: 4.5rem;
     background-color: var(--color-grey-light-1);
     border-bottom: var(--line);
-    font-size: 1.6rem;
+    font-size: 2rem;
+    margin: auto;
     @media only screen and (max-width: $bp-medium){
         padding: 3rem;
-    }
-    @media only screen and (max-width: $bp-small){
-        flex-direction: column;
-    }
 
+        grid-column: 1 / span 2;
+    }
+    // @media only screen and (max-width: $bp-small){
+    //     flex-direction: column;
+    // }
+}
+
+.paragraph{
+    font-size: 2rem;
 }
 
 .description{
     background-color: #fff;
     box-shadow: var(--shadow-light);
     padding: 3rem;
-    flex: 0 0 60%;
     margin-right: 4.5rem;
+    max-width: 60rem;
 
     @media only screen and (max-width: $bp-medium){
         padding: 2rem;

@@ -1,0 +1,33 @@
+@import '../variables.scss';
+.years{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    grid-gap: 20px;
+    margin: 5rem;
+    @media only screen and (max-width:$bp-smallest){
+        margin: 2rem;
+    }
+    &::before, &::after{
+        content: '';
+        display: block;
+        background-color: var(--color-grey-dark-1);
+        height: 5px;
+    }
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 35rem); // 35rem
+    grid-gap: 5rem;
+
+    @media only screen and (max-width:$bp-smallest){
+        grid-template-columns: repeat(2, 20rem); // 35rem
+        grid-template-rows: repeat(6, 28rem);
+    }
+
+    justify-items: center;
+    justify-content: center;
+    margin: 5rem;
+
+}
+

@@ -1,0 +1,87 @@
+
+@import '../../app/variables.scss';
+.personneWrapper{
+    width : 20rem;
+
+}
+
+.leftPersonneWrapper{
+    align-self: self-end;
+}
+
+.circle{
+    position: relative;
+    border-radius: 1000px;
+    width: 20rem;
+    height: 20rem;
+
+    z-index: 200;
+}
+
+.leftCircle{
+    background-color: var(--color-primary);
+}
+
+.rightCircle{
+    background-color: var(--color-grey-dark-1);
+}
+
+.img{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 1000px;
+    width: 18rem;
+    height: 18rem;
+    z-index: 2;
+}
+
+.description{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    color: var(--color-grey-light-1);
+    width: 26rem;
+    height: 5rem;
+    padding: 0 1rem;
+    animation: trans 1s;
+
+    h4{
+        opacity: 0;
+        animation: fade 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fade {
+        from{opacity: 0;}to{opacity: 1}
+    }
+}
+
+.rightDescription{
+    top: 0;
+    left: 50%;
+    padding-left: 7.5rem;
+    background: var(--color-grey-dark-1);
+    
+}
+
+.leftDescription{
+    right: 50%;
+    bottom: 0;
+    padding-right: 7.5rem;
+    
+    background: var(--color-primary);
+}
+
+@keyframes trans {
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 26rem;
+    }
+}

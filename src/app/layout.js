@@ -32,8 +32,9 @@ export default function RootLayout({ children }) {
           <Header />
           <div className='content'>
             <SideBar />
-            {children}
-
+            <main className='main'>
+              {children}
+            </main>
           </div>
         </div></body>
     </html>

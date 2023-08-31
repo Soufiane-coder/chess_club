@@ -13,6 +13,10 @@
         display: block;
         background-color: var(--color-grey-dark-1);
         height: 5px;
+        width: 70px;
+    }
+    &::before{
+        justify-self: end;
     }
 }
 .wrapper {
@@ -22,7 +26,7 @@
 
     @media only screen and (max-width:$bp-smallest){
         grid-template-columns: repeat(2, 20rem); // 35rem
-        grid-template-rows: repeat(6, 28rem);
+        grid-template-rows: repeat(4, 28rem);
     }
 
     justify-items: center;

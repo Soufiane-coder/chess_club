@@ -7,9 +7,9 @@ export const metadata = {
 
 const Page = () => {
     return (
-        <main className="main">
+        <>
             chess Bot
-        </main>
+        </>
     )
 }
 

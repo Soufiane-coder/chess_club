@@ -2,7 +2,6 @@
 @import '../../app/variables.scss';
 .personneWrapper{
     width : 20rem;
-
 }
 
 .leftPersonneWrapper{
@@ -46,12 +45,12 @@
     width: 26rem;
     height: 5rem;
     padding: 0 1rem;
-    animation: trans 1s;
+    animation: trans .5s;
 
     h4{
         opacity: 0;
-        animation: fade 1s;
-        animation-delay: 1s;
+        animation: fade .5s;
+        animation-delay: .5s;
         animation-fill-mode: forwards;
     }
 

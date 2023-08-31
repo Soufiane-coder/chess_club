@@ -51,14 +51,14 @@ const personnes = [
 
 const Page = () => {
     return (
-        <main className="main">
-            <h1 className={styles.years}>2022-2023</h1>
+        <>
+            <h2 className={styles.years}>2022-2023</h2>
             <div className={styles.wrapper}>
                 {
                     personnes.map((personne, index) => <CardPerso side={index % 2 ? 'left' : 'right'} {...personne} />)
                 }
             </div>
-        </main>
+        </>
     )
 }
 

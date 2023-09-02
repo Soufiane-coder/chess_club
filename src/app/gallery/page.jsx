@@ -2,10 +2,11 @@
 import PhotoAlbum from "react-photo-album";
 import NextJsImage from "@/components/next-js-image/next-js-image.components";
 import photos from "./photos";
-export const metadata = {
-    title: 'Gallery',
-    description: 'This is the chess club web site of the university Ecole Normale Supérieur de rabat',
-}
+
+// export const metadata = {
+//     title: 'Gallery',
+//     description: 'This is the chess club web site of the university Ecole Normale Supérieur de rabat',
+// }
 
 const Page = () => {
     return (

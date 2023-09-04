@@ -5,7 +5,7 @@ module.exports = {
         dangerouslyAllowSVG: true,
         contentDispositionType: 'attachment',
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-        domains: ["source.unsplash.com"],
+        domains: ["source.unsplash.com", 'firebasestorage.googleapis.com'],
     },
     webpack: (config, { isServer }) => {
         config.module.rules.push({

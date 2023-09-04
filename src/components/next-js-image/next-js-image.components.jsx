@@ -12,6 +12,7 @@ export default function NextJsImage({
                 src={photo}
                 placeholder={"blurDataURL" in photo ? "blur" : undefined}
                 {...{ alt, title, sizes, className, onClick }}
+                priority
             />
         </div>
     );

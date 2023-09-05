@@ -1,4 +1,4 @@
-
+import './chess-bot.style.scss';
 
 export const metadata = {
     title: 'Chess Bot',
@@ -6,11 +6,12 @@ export const metadata = {
 }
 
 const Page = () => {
+
     return (
-        <>
-            chess Bot
-        </>
-    )
+
+        <iframe src="https://zeyu2001.github.io/chess-ai/" width="100%" height="100%" ></iframe>
+    );
+
 }
 
 export default Page;

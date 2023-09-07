@@ -2,10 +2,10 @@ import Image from "next/image";
 import styles from './header.module.scss';
 
 const Header = () => {
-    return (
-        <header className={styles.header}>
-            <Image src={'/assets/img/chess-club-logo.png'} width={400} height={400} alt='chess club logo' className="logo" />
-            {/* <form action="#" className="search">
+  return (
+    <header className={styles.header}>
+      <Image src={'/assets/img/chess-club-logo.png'} width={200} height={200} alt='chess club logo' className={styles.logo} priority />
+      {/* <form action="#" className="search">
         <input type="text" className="search__input" placeholder='Search hotels' />
         <button className="search__button">
           // <svg className="search__icon">
@@ -32,8 +32,8 @@ const Header = () => {
           <span className="user-nav__user-name">Jonas</span>
         </div>
       </div> */}
-        </header>
-    )
+    </header>
+  )
 }
 
 export default Header;

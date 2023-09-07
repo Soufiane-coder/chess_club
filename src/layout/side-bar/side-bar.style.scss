@@ -1,4 +1,5 @@
-@import '../../app/variables.scss';
+@import '@/style/variables.scss';
+
 
 .sidebar{
     background-color: var(--color-grey-dark-1);
@@ -88,5 +89,15 @@
             height: 1.5rem;
         }
     
+    }
+}
+
+.legal{
+    font-size: 1.2rem;
+    color: var(--color-grey-light-4);
+    text-align: center;
+    padding: 2.5rem;
+    @media only screen and (max-width: $bp-medium){
+        display: none;
     }
 }

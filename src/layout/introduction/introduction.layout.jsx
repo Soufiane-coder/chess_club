@@ -8,8 +8,8 @@ const Introduction = () => {
     return (
         <section className={styles.introduction}>
             <div className={styles.patternSet} /> {/*to change the background*/}
-            <Image src={ChessSet} sizes='100' alt='chess set' className={styles.chessSet} />
-            <Ko64 className={styles.titleLogo} />
+            <Image src={ChessSet} sizes='100' alt='chess set' className={styles.chessSet} priority />
+            <Ko64 className={styles.titleLogo} priority />
         </section>
     )
 }

@@ -1,11 +1,11 @@
 import './globals.scss'
 import { Comic_Neue } from 'next/font/google';
-
 import Header from '../layout/header/header.layout';
 import SideBar from '../layout/side-bar/side-bar';
+import styles from './layout.module.scss';
+
 
 import './_components.scss';
-import './_layout.scss';
 
 
 const commicNeue = Comic_Neue({ weight: '300', subsets: ['latin'] })
@@ -28,11 +28,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={commicNeue.className}>
-        <div className="container">
+        <div className={styles.container}>
           <Header />
-          <div className='content'>
+          <div className={styles.content}>
             <SideBar />
-            <main className='main'>
+            <main className={styles.main}>
               {children}
             </main>
           </div>

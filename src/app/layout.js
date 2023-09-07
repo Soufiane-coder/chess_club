@@ -4,12 +4,7 @@ import Header from '../layout/header/header.layout';
 import SideBar from '../layout/side-bar/side-bar';
 import styles from './layout.module.scss';
 
-
-import './_components.scss';
-
-
 const commicNeue = Comic_Neue({ weight: '300', subsets: ['latin'] })
-
 
 export const metadata = {
   title: 'chess club',
